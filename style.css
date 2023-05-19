@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FBFAFF;
+  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
+}
+
+#component {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 44rem;
+  height: 42rem;
+}
+
+#component .upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 44rem;
+  height: 16rem;
+  background-color: #F3F0FF;
+  border: 0.1rem dashed #C1B2FA;
+  border-radius: 0.8rem;
+}
+
+#component .upload img {
+  margin-top: 2.8rem;
+}
+
+#component .upload span {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #7A5FEC;
+  margin-top: 1.2rem;
+}
+
+#component .upload p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 130%;
+  color: #746E82;
+  margin-top: 0.1rem;
+}
+
+#component .files {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 44rem;
+  height: 24rem;
+}
+
+#component .files .uploading,
+#component .files .error {
+  position: relative;
+}
+
+#component .files .uploading,
+#component .files .success,
+#component .files .error {
+  display: flex;
+  gap: 1.2rem;
+  padding: 0.8rem;
+  width: 44rem;
+  height: 7.2rem;
+  background-color: white;
+  box-shadow: 0rem 0.4rem 1.6rem #EAE2FD;
+  border-radius: 0.8rem;
+}
+
+#component .files .uploading .content img, 
+#component .files .error .content img {
+  position: absolute;
+  left: 40.8rem;
+}
+
+#component .files .uploading .content,
+#component .files .success .content,
+#component .files .error .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 36.4rem;
+  height: 5.6rem;
+}
+
+#component .files .uploading .content .title,
+#component .files .success .content .title,
+#component .files .error .content .title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 33.2rem;
+  height: 3.6rem;
+}
+
+#component .files .uploading .content .title h4,
+#component .files .success .content .title h4,
+#component .files .error .content .title h4 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 130%;
+  color: #575361;
+}
+
+#component .files .uploading .content .title p,
+#component .files .success .content .title p,
+#component .files .error .content .title p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 130%;
+  color: #857E95;
+}
+
+#component .files .uploading .content .progress,
+#component .files .success .content .progress,
+#component .files .error .content .progress {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 36.4rem;
+  height: 1.6rem;
+}
+
+#component .files .uploading .content .progress .loader,
+#component .files .error .content .progress .loader {
+  width: 32.4rem;
+  height: 0.8rem;
+  background-color: #E3E3ED;
+  border-radius: 99.9rem;
+}
+
+#component .files .uploading .content .progress .loader .bar {
+  width: 15.7rem;
+  height: 0.8rem;
+  background: linear-gradient(90deg, rgba(58, 97, 237, 0.52) 0%, #7C3AED 100%);
+}
+
+#component .files .uploading .content .progress span {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 130%;
+  color: #9892A6;
+}
+
+#component .files .success .content .progress .loader {
+  width: 32.4rem;
+  height: 0.8rem;
+  background-color: #73B172;
+  border-radius: 99.9rem;
+}
+
+#component .files .success .content .progress span {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 130%;
+  color: #4E884D;
+}
+
+#component .files .error .content .progress span {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 130%;
+  color: #E36363;
+}

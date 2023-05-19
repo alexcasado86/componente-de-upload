@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Componente de Upload</title>
+</head>
+<body>
+  <div id="component">
+    <div class="upload">
+      <img src="assets/images/cloud-arrow-up.svg" alt="Ícone de uma nuvem e dentro dela uma seta para cima">
+      <span>Importe seus arquivos</span>
+      <p>Arraste ou clique para fazer upload</p>
+    </div>
+    <div class="files">
+      <div class="uploading">
+        <img src="assets/images/icon1.svg" alt="Ícone de uma folha de papel roxa">
+        <div class="content">
+          <div class="title">
+            <h4>Scann_158.pdf</h4>
+            <p>30 MB / 74 MB</p>
+          </div>
+          <div class="progress">
+            <div class="loader">
+              <div class="bar"></div>
+            </div>
+            <span>46%</span>
+          </div>
+          <img src="assets/images/cancel.svg" alt="Ícone de um x">
+        </div>
+      </div>
+      <div class="success">
+        <img src="assets/images/icon2.svg" alt="Ícone de uma folha de papel verde">
+        <div class="content">
+          <div class="title">
+            <h4>README.rm</h4>
+            <p>12 KB</p>
+          </div>
+          <div class="progress">
+            <div class="loader"></div>
+            <span>100%</span>
+          </div>
+        </div>
+      </div>
+      <div class="error">
+        <img src="assets/images/icon3.svg" alt="Ícone de uma folha de papel vermelha">
+        <div class="content">
+          <div class="title">
+            <h4>picture1.jpeg</h4>
+            <p>6.3 MB</p>
+          </div>
+          <div class="progress">
+            <div class="loader"></div>
+            <span>Erro</span>
+          </div>
+          <img src="assets/images/retry.svg" alt="Ícone de uma flechinha girando">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
